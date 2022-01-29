@@ -24,14 +24,12 @@
   margin-bottom: 9px;
 }
 
-.address__link:hover,
-.address__link:focus {
-  color: var(--accent-color);
-}
-
 .address__link {
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--animation-duration) var(--animation-function);
+  &:focus, &:hover {
+  color: var(--accent-color);
+}
 }
 
 .address__link--white {
@@ -88,10 +86,9 @@
   margin-right: 15px;
   padding: 15px 16px;
   transition: outline var(--animation-duration) var(--animation-function);
-}
-
-.footer-form__input:focus {
+  &:focus {
   outline: 1px solid var(--accent-color);
+}
 }
 
 .footer-form__icon {

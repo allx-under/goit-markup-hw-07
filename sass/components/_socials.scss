@@ -16,12 +16,10 @@
   color: #AFB1B8;
   transition: color var(--animation-duration) var(--animation-function), 
     background-color var(--animation-duration) var(--animation-function);
-}
-
-.socials__link:hover,
-.socials__link:focus {
+  &:focus, &:hover{
   color: var(--add-color);
   background-color: var(--accent-color);
+}
 }
 
 .socials__icon {
